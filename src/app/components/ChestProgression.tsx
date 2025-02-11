@@ -19,14 +19,14 @@ ChartJS.register(CategoryScale, LinearScale, LineElement, PointElement, Title, T
 export default function ChartPage({title, data, warning, succ}) {
     // Sample data for the chart
     const [chartData] = useState({
-        labels: ["Week 1", "Week 2", "Week 3", "Week 4"], // Weeks on x-axis
+        labels: ["Week 1", "Week 2", "Week 3", "Week 4"], 
         datasets: [
             {
-                label: "Weight Lifted (lbs)", // Chart label
-                data: data, // Weight lifted on y-axis
-                fill: false, // Don't fill the area below the line
-                borderColor: "rgb(31, 59, 77)", // Line color
-                tension: 0.1, // Line smoothness
+                label: "Weight Lifted (lbs)", 
+                data: data, 
+                fill: false, 
+                borderColor: "rgb(31, 59, 77)", 
+                tension: 0.1, 
             },
         ],
     });
